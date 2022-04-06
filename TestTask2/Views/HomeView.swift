@@ -10,6 +10,13 @@ import SnapKit
 
 class HomeView: UIView {
     
+    lazy var labelName: UILabel = {
+        let label = UILabel()
+        label.text = "Landmarks"
+        label.font = UIFont(name: "AvenirNext-Bold", size: 50)
+        return label
+    }()
+    
     lazy var tableLandMarks: UITableView = {
         let table = UITableView()
         return table
@@ -31,13 +38,20 @@ class HomeView: UIView {
     }
     
     private func addSubviews() {
+        addSubview(labelName)
         addSubview(tableLandMarks)
     }
     
     private func initConstraints() {
+        labelName.snp.makeConstraints { make in
+            make.left.right.equalToSuperview()
+            make.top.equalTo(safeAreaLayoutGuide.snp.top)
+            make.height.equalTo(50)
+        }
+        
         tableLandMarks.snp.makeConstraints { make in
             make.left.right.bottom.equalToSuperview()
-            make.top.equalToSuperview().inset(50)
+            make.top.equalTo(labelName.snp.bottom)
         }
     }
    
