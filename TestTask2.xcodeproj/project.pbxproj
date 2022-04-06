@@ -14,6 +14,7 @@
 		FAB8B6D327FDB0110071B04F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FAB8B6D227FDB0110071B04F /* Assets.xcassets */; };
 		FAB8B6D627FDB0110071B04F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FAB8B6D427FDB0110071B04F /* LaunchScreen.storyboard */; };
 		FAB8B6EC27FDBC510071B04F /* SnapKit.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = FAB8B6EB27FDBC510071B04F /* SnapKit.xcframework */; };
+		FAB8B6F027FDBEA70071B04F /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAB8B6EF27FDBEA70071B04F /* HomeView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -27,6 +28,7 @@
 		FAB8B6D727FDB0110071B04F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		FAB8B6E027FDB5160071B04F /* SnapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SnapKit.framework; path = Carthage/Build/iOS/SnapKit.framework; sourceTree = "<group>"; };
 		FAB8B6EB27FDBC510071B04F /* SnapKit.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; name = SnapKit.xcframework; path = Carthage/Build/SnapKit.xcframework; sourceTree = "<group>"; };
+		FAB8B6EF27FDBEA70071B04F /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -77,6 +79,7 @@
 		FAB8B6DD27FDB0530071B04F /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				FAB8B6EF27FDBEA70071B04F /* HomeView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -169,6 +172,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				FAB8B6CE27FDB00F0071B04F /* ViewController.swift in Sources */,
+				FAB8B6F027FDBEA70071B04F /* HomeView.swift in Sources */,
 				FAB8B6CA27FDB00F0071B04F /* AppDelegate.swift in Sources */,
 				FAB8B6CC27FDB00F0071B04F /* SceneDelegate.swift in Sources */,
 			);
