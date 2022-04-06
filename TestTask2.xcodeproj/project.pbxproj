@@ -13,23 +13,8 @@
 		FAB8B6D127FDB00F0071B04F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FAB8B6CF27FDB00F0071B04F /* Main.storyboard */; };
 		FAB8B6D327FDB0110071B04F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FAB8B6D227FDB0110071B04F /* Assets.xcassets */; };
 		FAB8B6D627FDB0110071B04F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FAB8B6D427FDB0110071B04F /* LaunchScreen.storyboard */; };
-		FAB8B6E127FDB5160071B04F /* SnapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FAB8B6E027FDB5160071B04F /* SnapKit.framework */; };
-		FAB8B6E227FDB5160071B04F /* SnapKit.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = FAB8B6E027FDB5160071B04F /* SnapKit.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		FAB8B6EC27FDBC510071B04F /* SnapKit.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = FAB8B6EB27FDBC510071B04F /* SnapKit.xcframework */; };
 /* End PBXBuildFile section */
-
-/* Begin PBXCopyFilesBuildPhase section */
-		FAB8B6E327FDB5160071B04F /* Embed Frameworks */ = {
-			isa = PBXCopyFilesBuildPhase;
-			buildActionMask = 2147483647;
-			dstPath = "";
-			dstSubfolderSpec = 10;
-			files = (
-				FAB8B6E227FDB5160071B04F /* SnapKit.framework in Embed Frameworks */,
-			);
-			name = "Embed Frameworks";
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		FAB8B6C627FDB00F0071B04F /* TestTask2.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TestTask2.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -41,6 +26,7 @@
 		FAB8B6D527FDB0110071B04F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		FAB8B6D727FDB0110071B04F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		FAB8B6E027FDB5160071B04F /* SnapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SnapKit.framework; path = Carthage/Build/iOS/SnapKit.framework; sourceTree = "<group>"; };
+		FAB8B6EB27FDBC510071B04F /* SnapKit.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; name = SnapKit.xcframework; path = Carthage/Build/SnapKit.xcframework; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -48,7 +34,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				FAB8B6E127FDB5160071B04F /* SnapKit.framework in Frameworks */,
+				FAB8B6EC27FDBC510071B04F /* SnapKit.xcframework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -105,6 +91,7 @@
 		FAB8B6DF27FDB5150071B04F /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				FAB8B6EB27FDBC510071B04F /* SnapKit.xcframework */,
 				FAB8B6E027FDB5160071B04F /* SnapKit.framework */,
 			);
 			name = Frameworks;
@@ -120,7 +107,6 @@
 				FAB8B6C227FDB00F0071B04F /* Sources */,
 				FAB8B6C327FDB00F0071B04F /* Frameworks */,
 				FAB8B6C427FDB00F0071B04F /* Resources */,
-				FAB8B6E327FDB5160071B04F /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
@@ -353,6 +339,7 @@
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = 1;
+				VALIDATE_WORKSPACE = YES;
 			};
 			name = Debug;
 		};
@@ -385,6 +372,7 @@
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = 1;
+				VALIDATE_WORKSPACE = YES;
 			};
 			name = Release;
 		};
