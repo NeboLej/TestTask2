@@ -13,7 +13,23 @@
 		FAB8B6D127FDB00F0071B04F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FAB8B6CF27FDB00F0071B04F /* Main.storyboard */; };
 		FAB8B6D327FDB0110071B04F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FAB8B6D227FDB0110071B04F /* Assets.xcassets */; };
 		FAB8B6D627FDB0110071B04F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FAB8B6D427FDB0110071B04F /* LaunchScreen.storyboard */; };
+		FAB8B6E127FDB5160071B04F /* SnapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FAB8B6E027FDB5160071B04F /* SnapKit.framework */; };
+		FAB8B6E227FDB5160071B04F /* SnapKit.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = FAB8B6E027FDB5160071B04F /* SnapKit.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 /* End PBXBuildFile section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		FAB8B6E327FDB5160071B04F /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				FAB8B6E227FDB5160071B04F /* SnapKit.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		FAB8B6C627FDB00F0071B04F /* TestTask2.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TestTask2.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -24,6 +40,7 @@
 		FAB8B6D227FDB0110071B04F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		FAB8B6D527FDB0110071B04F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		FAB8B6D727FDB0110071B04F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FAB8B6E027FDB5160071B04F /* SnapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SnapKit.framework; path = Carthage/Build/iOS/SnapKit.framework; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,6 +48,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FAB8B6E127FDB5160071B04F /* SnapKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -42,6 +60,7 @@
 			children = (
 				FAB8B6C827FDB00F0071B04F /* TestTask2 */,
 				FAB8B6C727FDB00F0071B04F /* Products */,
+				FAB8B6DF27FDB5150071B04F /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -83,6 +102,14 @@
 			path = ViewControllers;
 			sourceTree = "<group>";
 		};
+		FAB8B6DF27FDB5150071B04F /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				FAB8B6E027FDB5160071B04F /* SnapKit.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -93,6 +120,7 @@
 				FAB8B6C227FDB00F0071B04F /* Sources */,
 				FAB8B6C327FDB00F0071B04F /* Frameworks */,
 				FAB8B6C427FDB00F0071B04F /* Resources */,
+				FAB8B6E327FDB5160071B04F /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
@@ -304,6 +332,10 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = 955DP87LHM;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = TestTask2/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
@@ -332,6 +364,10 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = 955DP87LHM;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = TestTask2/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
