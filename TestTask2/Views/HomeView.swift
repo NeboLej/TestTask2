@@ -13,12 +13,13 @@ class HomeView: UIView {
     lazy var labelName: UILabel = {
         let label = UILabel()
         label.text = "Landmarks"
-        label.font = UIFont(name: "AvenirNext-Bold", size: 50)
+        label.font = UIFont(name: "AvenirNext-Bold", size: 45)
         return label
     }()
     
     lazy var tableLandMarks: UITableView = {
         let table = UITableView()
+        table.register(UITableViewCell.self, forCellReuseIdentifier: "cell")
         return table
     }()
     
