@@ -15,6 +15,7 @@
 		FAB8B6F027FDBEA70071B04F /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAB8B6EF27FDBEA70071B04F /* HomeView.swift */; };
 		FAC21D4327FF6A0100F67D75 /* HomeVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAC21D4227FF6A0100F67D75 /* HomeVC.swift */; };
 		FAC21D4527FF6CA000F67D75 /* LandmarkCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAC21D4427FF6CA000F67D75 /* LandmarkCell.swift */; };
+		FAC21D4727FF741B00F67D75 /* landmarkData.json in Resources */ = {isa = PBXBuildFile; fileRef = FAC21D4627FF741B00F67D75 /* landmarkData.json */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -29,6 +30,7 @@
 		FAB8B6EF27FDBEA70071B04F /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
 		FAC21D4227FF6A0100F67D75 /* HomeVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeVC.swift; sourceTree = "<group>"; };
 		FAC21D4427FF6CA000F67D75 /* LandmarkCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LandmarkCell.swift; sourceTree = "<group>"; };
+		FAC21D4627FF741B00F67D75 /* landmarkData.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = landmarkData.json; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -69,6 +71,7 @@
 				FAB8B6CB27FDB00F0071B04F /* SceneDelegate.swift */,
 				FAB8B6D227FDB0110071B04F /* Assets.xcassets */,
 				FAB8B6D427FDB0110071B04F /* LaunchScreen.storyboard */,
+				FAC21D4627FF741B00F67D75 /* landmarkData.json */,
 				FAB8B6D727FDB0110071B04F /* Info.plist */,
 			);
 			path = TestTask2;
@@ -160,6 +163,7 @@
 			files = (
 				FAB8B6D627FDB0110071B04F /* LaunchScreen.storyboard in Resources */,
 				FAB8B6D327FDB0110071B04F /* Assets.xcassets in Resources */,
+				FAC21D4727FF741B00F67D75 /* landmarkData.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

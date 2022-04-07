@@ -38,8 +38,8 @@ class LandmarkCell: UITableViewCell {
     
     
     private func addSubviews() {
-        addSubview(label)
         addSubview(avatarView)
+        addSubview(label)
         addSubview(favoriteImage)
     }
     
@@ -51,13 +51,14 @@ class LandmarkCell: UITableViewCell {
         }
         
         label.snp.makeConstraints { make in
-            make.left.equalTo(avatarView.snp.right).inset(20)
-            make.top.right.equalToSuperview()
-            make.width.equalTo(200)
+            make.left.equalTo(avatarView.snp.right).offset(30)
+            make.centerY.equalTo(avatarView)
+            make.width.equalTo(100)
         }
         
         favoriteImage.snp.makeConstraints { make in
-            make.left.equalTo(label.snp.right).inset(10)
+            make.left.equalTo(label.snp.right)
+            make.centerY.equalTo(label)
             make.width.height.equalTo(20)
         }
         

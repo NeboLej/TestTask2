@@ -34,8 +34,8 @@ extension HomeVC: UITableViewDelegate, UITableViewDataSource {
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: "cell", for: indexPath)
-        cell.textLabel?.text = "ooooo"
+        let cell = tableView.dequeueReusableCell(withIdentifier: "cell", for: indexPath) as! LandmarkCell
+        cell.initCell(name: "Oleg", avatar: .checkmark, isFavorite: true)
         return cell
     }
     

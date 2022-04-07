@@ -19,7 +19,7 @@ class HomeView: UIView {
     
     lazy var tableLandMarks: UITableView = {
         let table = UITableView()
-        table.register(UITableViewCell.self, forCellReuseIdentifier: "cell")
+        table.register(LandmarkCell.self, forCellReuseIdentifier: "cell")
         return table
     }()
     
